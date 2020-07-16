@@ -5,8 +5,6 @@ from sanic.views import HTTPMethodView
 from Task2.credentials import username, password, secret_key
 import jwt
 from datetime import datetime, timedelta
-import hashlib
-import os
 
 app = Sanic("hello_example")
 
