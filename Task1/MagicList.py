@@ -27,6 +27,12 @@ class MagicList:
             raise IndexError("list assignment index out of range")
 
     def __getitem__(self, item):
+        """
+        This this method we generate an object if we get referenced by the last index (should be extended) and class
+        type is not None.
+        :param item: int
+        :return:
+        """
         if self.class_type is not None and len(self.list) == item:
             custom_object = self.class_type()
             self.list.append(custom_object)

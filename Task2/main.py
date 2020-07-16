@@ -61,8 +61,8 @@ class TaskBView(HTTPMethodView):
         user = validate_user(token)
 
         if user is not None:
-            return {dict["name"]: dict[[key for key, value in dict.items() if "val" in key.lower()][0]] for dict in
-                    parameters}
+            return json({dict["name"]: dict[[key for key, value in dict.items() if "val" in key.lower()][0]] for dict in
+                    parameters})
         else:
             return prepare_for_response("Invalid token - please sign in", 403)
 
