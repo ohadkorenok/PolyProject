@@ -32,7 +32,7 @@ def validate_user(jwt_object: str):
 class SimpleView(HTTPMethodView):
 
     def post(self, request):
-        """this method will be used to authenticate the user"""
+        """this method will be used to authenticate the user and generate JWT object"""
         try:
             parameters = loads(request.body)
             username_from_client = parameters.get("username")
