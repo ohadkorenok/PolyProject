@@ -44,7 +44,6 @@ a[0] = 5
 a[1] = 7
 a[1] = 9
 a[3] = 6
-ohad = "ohad"
 
 b = MagicList(cls_type=Person)
 b[0].age = 7
