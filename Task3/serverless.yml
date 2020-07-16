@@ -1,0 +1,9 @@
+service: polyrise-test
+
+provider:
+  name: aws
+  runtime: python3.7
+
+functions:
+  sanic:
+    handler: main.main
